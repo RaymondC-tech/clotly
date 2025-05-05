@@ -44,7 +44,6 @@ RUN apt-get update && apt-get install -y ffmpeg
 #3. Set working directory
 WORKDIR /app
 
-
 # 4. Copy package.json and package-lock.ison into working directory
 COPY package*.json ./
 
@@ -58,7 +57,7 @@ COPY --from=builder /app/dist ./dist
 EXPOSE 3000
 
 #8. Define command to run app using CMD which defined runtime
-CMD [ "node", "dist/index.js" ]   
+CMD [ "npm", "run", "serve" ]   
 
 #npm run serve instead of npm start to compile files from /dist directory (size is smaller
 # since we only include compiled files instead of source files)

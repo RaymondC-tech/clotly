@@ -3,7 +3,7 @@ import ffmpeg from 'fluent-ffmpeg' //way to use CLI tool outside of command line
 
 
 const app = express()
-app.use(express.json());
+app.use(express.json()); //tells express to parse incomding JSON request bodies so req.body will be parsed JavaScript objectsokok
 
 
 app.post("/process-video", (req, res) => {
