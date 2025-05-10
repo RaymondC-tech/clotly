@@ -11,13 +11,13 @@
   "license": "ISC",
   "description": "",
   "devDependencies": {
+    "@types/fluent-ffmpeg": "^2.1.27",
     "ts-node": "^10.9.2",
     "typescript": "^5.8.3"
   },
   "dependencies": {
     "@google-cloud/storage": "^7.16.0",
     "@types/express": "^5.0.1",
-    "@types/fluent-ffmpeg": "^2.1.27",
     "express": "^5.1.0",
     "fluent-ffmpeg": "^2.1.3"
   }
